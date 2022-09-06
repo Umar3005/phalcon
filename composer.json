@@ -1,0 +1,27 @@
+{
+    "name": "utires/phalconapi",
+    "require": {
+        "phalcon/incubator": "^2.0",
+        "phalcon/devtools": "^4.2",
+        "symfony/mailer": "^5.4",
+        "ext-simplexml": "*",
+        "elasticsearch/elasticsearch": "~7.0",
+        "ext-json": "*",
+        "ext-oauth": "*",
+        "composer require psr/simple-cache": "*",
+        "ext-openssl": "*",
+        "firebase/php-jwt": "^6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Utires\\Phalconapi\\": "src/",
+            "Core\\": "Core"
+        }
+    },
+    "authors": [
+        {
+            "name": "Umar Geliskhanov",
+            "email": "ugeliskhanov@lachestry.com"
+        }
+    ]
+}

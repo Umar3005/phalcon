@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<routes>
+    <route
+            name="product"
+            method="POST"
+            url="/api/catalog/vue_storefront_catalog/product/_search/?([^/]*)/?([^/]*)/?{from}/?{size}/?{sort}"
+    >
+        <service class="Product\Controllers\Product" method="getProduct"/>
+    </route>
+</routes>

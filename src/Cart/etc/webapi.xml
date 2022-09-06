@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<routes>
+    <route name="cart-create" method="POST" url="/api/cart/create/?{token}">
+        <service class="Cart\Controllers\Cart" method="create"/>
+    </route>
+
+    <route name="cart-pull" method="GET" url="/api/cart/pull/?{token}/?{cartId}">
+        <service class="Cart\Controllers\Cart" method="pull"/>
+    </route>
+
+    <route name="cart-update" method="POST" url="/api/cart/update/?{token}/?{cartId}">
+        <service class="Cart\Controllers\Cart" method="update"/>
+    </route>
+
+    <route name="cart-delete" method="POST" url="/api/cart/delete/?{token}/?{cartId}">
+        <service class="Cart\Controllers\Cart" method="delete"/>
+    </route>
+
+    <route name="cart-payment-methods" method="GET" url="/api/cart/payment-methods/?{token}/?{cartId}">
+        <service class="Cart\Controllers\Cart" method="getPaymentMethods"/>
+    </route>
+</routes>

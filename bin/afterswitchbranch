@@ -1,0 +1,12 @@
+#!/bin/bash
+
+bin/xdebug disable
+bin/composer install
+bin/magento setup:upgrade
+bin/magento setup:di:compile
+bin/magento c:f
+bin/magento setup:static-content:deploy -f
+bin/magento index:reset
+bin/magento index:reindex
+bin/xdebug enable
+

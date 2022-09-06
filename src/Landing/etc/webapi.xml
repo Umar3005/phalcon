@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<routes>
+    <route
+            name="landing"
+            method="POST"
+            url="/api/catalog/vue_storefront_catalog/landing/_search/?([^/]*)/?{from}/?{size}/?{sort}"
+    >
+        <service class="Landing\Controllers\Landing" method="getLanding"/>
+    </route>
+</routes>

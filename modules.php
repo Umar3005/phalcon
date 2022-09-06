@@ -1,0 +1,21 @@
+<?php
+return array (
+  'Attribute' => 1,
+  'Billing' => 1,
+  'Shipping' => 1,
+  'CartCoupon' => 1,
+  'CartTotals' => 1,
+  'Category' => 1,
+  'CmsPage' => 1,
+  'Config' => 1,
+  'EmbedSocialReview' => 1,
+  'Invalidate' => 1,
+  'Landing' => 1,
+  'Product' => 1,
+  'Cart' => 1,
+  'Stock' => 1,
+  'Subscribe' => 1,
+  'Url' => 1,
+  'User' => 1,
+  'Order' => 0,
+);

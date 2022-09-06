@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<routes>
+    <route name="cart-totals" method="GET" url="/api/cart/totals/?{token}/?{cartId}">
+        <service class="CartTotals\Controllers\CartTotals" method="create"/>
+    </route>
+</routes>

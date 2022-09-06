@@ -1,0 +1,22 @@
+version: "3"
+services:
+  phpphalcon:
+    build: ./Docker/php/7-4-phalcon
+    ports:
+      - "8081:80"
+    volumes:
+      - ./phalconapi:/var/www/html
+    extra_hosts:
+      - "host.docker.internal:172.17.0.1"
+      - "utires.local:172.17.0.1"
+
+  redis:
+    image: redis:5.0
+
+  redis-vsf:
+    image: 'redis:4-alpine'
+    ports:
+      - '6379:6379'
+
+  redis-phalcon:
+    image: 'redis:4-alpine'

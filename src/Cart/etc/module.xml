@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <module name="Cart"/>
+    <sequence>
+        <module name="Shipping"/>
+        <module name="Billing"/>
+    </sequence>
+</config>

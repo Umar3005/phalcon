@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<routes>
+    <route name="magento-subscription" method="POST" url="/api/ext/magento-subscribe/subscribe">
+        <service class="Subscribe\Controllers\Subscribe" method="subscribe"/>
+    </route>
+</routes>

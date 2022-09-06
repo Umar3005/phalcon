@@ -1,0 +1,4 @@
+#!/bin/bash
+NEW_PATH=$(echo "$@" | sed 's/src\///')
+bin/cli vendor/bin/phpcs --standard=Magento2 "$NEW_PATH"
+

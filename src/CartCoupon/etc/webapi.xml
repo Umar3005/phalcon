@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<routes>
+    <route name="cart-coupon-apply" method="POST" url="/api/cart/apply-coupon/?{token}/?{cartId}">
+        <service class="CartCoupon\Controllers\CartCoupon" method="apply"/>
+    </route>
+
+    <route name="cart-coupon-delete" method="POST" url="/api/cart/delete-coupon/?{token}/?{cartId}">
+        <service class="CartCoupon\Controllers\CartCoupon" method="delete"/>
+    </route>
+</routes>
